@@ -533,8 +533,16 @@ header nav a {
     padding: 20px
 }
 
-.services-secondary p {
-    padding-right: 60px;
+@media(min-width: 900px) {
+    .services-secondary div {
+        width: 50%;
+    }
+}
+
+@media(max-width: 500px) {
+    .services-secondary div {
+        max-width: 100%;
+    }
 }
 
 .services-list li {
@@ -558,6 +566,11 @@ header nav a {
     .services-secondary ul {
         margin: 0 11px;
     }
+}
+
+.services-info-img {
+    height: 100%;
+    width: 100%;
 }
 
 @media(max-width: 500px) {
